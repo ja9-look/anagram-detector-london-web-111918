@@ -10,6 +10,5 @@ class Anagram
   def match(array)
     array.each_with_object([]) {|check, anagrams|
       anagrams << check if word.split("").sort.join == check.split("").sort.join}
-      
   end
 end
